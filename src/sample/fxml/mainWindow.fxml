@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<VBox fx:id="vBox" minWidth="654.0" prefHeight="845.0" prefWidth="654.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.controllers.MainController">
+  <children>
+    <AnchorPane minHeight="544.0" minWidth="654.0" prefHeight="544.0000999999975" prefWidth="654.0">
+      <children>
+        <MenuBar fx:id="menuBar" prefHeight="31.0" prefWidth="654.0" useSystemMenuBar="false" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="-1.0">
+          <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#close" text="Close" fx:id="exitItem" />
+                <MenuItem mnemonicParsing="false" onAction="#save" text="Save image" fx:id="saveItem" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" text="About" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+        <Button fx:id="btnOpen" layoutY="49.0" mnemonicParsing="false" onAction="#actionButtonPressed" prefWidth="131.0" text="Open image" AnchorPane.leftAnchor="30.0" />
+        <Button fx:id="btnHistogram" layoutY="49.0" mnemonicParsing="false" onAction="#actionButtonPressed" prefWidth="131.0" text="RGB Histogram" AnchorPane.leftAnchor="227.0" />
+        <Button fx:id="btnBrightness" layoutY="49.0" mnemonicParsing="false" onAction="#actionButtonPressed" prefWidth="178.0" text="Brightness Histogram" AnchorPane.leftAnchor="420.0" />
+        <ImageView fx:id="imgView" disable="false" fitHeight="453.5000910259341" fitWidth="604.666748136282" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="36.5" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="139.33" AnchorPane.topAnchor="93.5" />
+      </children>
+    </AnchorPane>
+    <AnchorPane prefHeight="300.0" prefWidth="654.0">
+      <children>
+        <Slider fx:id="opacityLevel" layoutY="17.0" max="1.0" prefWidth="320.0" value="1.0" AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="167.0" />
+        <Slider fx:id="sepiaTone" layoutY="49.0" max="1.0" prefWidth="320.0" AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="167.0" />
+        <Slider fx:id="scaling" layoutY="86.0" max="1.0" min="0.5" prefWidth="320.0" value="1.0" AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="167.0" />
+        <Label layoutY="12.0" text="Opacity level:" AnchorPane.leftAnchor="56.0" />
+        <Label layoutY="44.0" text="Sepia tone:" AnchorPane.leftAnchor="57.0" />
+        <Label layoutY="82.0" text="Scaling factor:" AnchorPane.leftAnchor="57.0" />
+        <Label fx:id="opacityValue" layoutY="12.0" prefWidth="-1.0" text="1.00" AnchorPane.rightAnchor="112.0" />
+        <Label fx:id="sepiaValue" layoutY="44.0" prefWidth="-1.0" text="0.00" AnchorPane.rightAnchor="112.0" />
+        <Label fx:id="scalingValue" layoutY="82.0" prefWidth="-1.0" text="1.00" AnchorPane.rightAnchor="112.0" />
+        <Slider id="contrast" fx:id="hue" layoutY="121.0" max="1.0" min="-1.0" prefWidth="320.0" AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="167.0" />
+        <Slider id="contrast" fx:id="saturation" layoutY="159.0" max="1.0" min="-1.0" prefWidth="320.0" AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="167.0" />
+        <Label layoutY="119.0" text="Hue:" AnchorPane.leftAnchor="57.0" />
+        <Label layoutY="156.0" text="Saturation:" AnchorPane.leftAnchor="57.0" />
+        <Label fx:id="hueValue" layoutY="119.0" prefWidth="-1.0" text="0.00" AnchorPane.rightAnchor="112.0" />
+        <Label fx:id="saturationValue" layoutY="156.0" prefWidth="-1.0" text="0.00" AnchorPane.rightAnchor="112.0" />
+        <Label layoutX="57.0" layoutY="188.0" text="Contrast:" />
+        <Slider fx:id="contrast" layoutY="190.0" max="1.0" min="-1.0" prefWidth="320.0" AnchorPane.leftAnchor="167.0" AnchorPane.rightAnchor="167.0" />
+        <Label fx:id="contrastValue" layoutY="189.0" text="0.00" AnchorPane.rightAnchor="112.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

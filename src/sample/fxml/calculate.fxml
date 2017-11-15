@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="631.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.controllers.CalculateController">
+  <children>
+    <MenuBar layoutY="1.0" prefWidth="630.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="167.65469360351562" stroke="BLACK" strokeType="INSIDE" width="255.5" AnchorPane.bottomAnchor="491.35" AnchorPane.leftAnchor="16.75" AnchorPane.rightAnchor="358.75" AnchorPane.topAnchor="39.0" />
+    <Label layoutX="25.0" layoutY="45.0" text="The average size of phase:" underline="true">
+      <font>
+        <Font size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label layoutX="34.0" layoutY="78.0" text="Zoom M =" />
+    <TextField fx:id="tf1" layoutX="111.0" layoutY="76.0" prefWidth="89.0" />
+    <Button fx:id="btn1" layoutX="209.0" layoutY="75.0" mnemonicParsing="false" onAction="#actionButtonPressed" text="ok" />
+    <ImageView fitHeight="91.65470220619012" fitWidth="104.00003051757812" layoutX="31.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../1.PNG" />
+      </image>
+    </ImageView>
+    <Label fx:id="lb1" layoutX="136.0" layoutY="138.0" prefHeight="52.0" prefWidth="119.0" text="=">
+      <font>
+        <Font size="22.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="203.46942138671875" layoutX="301.0" layoutY="39.0" stroke="BLACK" strokeType="INSIDE" width="293.2498779296875" />
+    <Label font="$x1" layoutX="310.0" layoutY="45.0" text="The external surface area of phase:" underline="true" />
+    <TextField fx:id="tf2" layoutX="346.0" layoutY="76.0" prefWidth="62.0" />
+    <Button fx:id="btn2" layoutX="535.0" layoutY="76.0" mnemonicParsing="false" onAction="#actionButtonPressed" text="ok" />
+    <ImageView fitHeight="122.46941510038845" fitWidth="119.0000228881836" layoutX="316.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../2.PNG" />
+      </image>
+    </ImageView>
+    <Label id="lb1" fx:id="lb2" font="$x2" layoutX="436.0" layoutY="144.0" prefHeight="52.0" prefWidth="142.0" text="=" />
+    <ImageView fitHeight="19.525423583984374" fitWidth="32.0" layoutX="426.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../5.PNG" />
+      </image>
+    </ImageView>
+    <ImageView fitHeight="25.931024685012023" fitWidth="31.999988555908203" layoutX="314.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../6.PNG" />
+      </image>
+    </ImageView>
+    <TextField fx:id="tf3" layoutX="458.0" layoutY="76.0" prefWidth="62.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="176.65469360351562" layoutX="17.0" layoutY="265.0" stroke="BLACK" strokeType="INSIDE" width="330.0" />
+    <Label font="$x1" layoutX="25.0" layoutY="271.0" text="The average free gap between particles:" underline="true" />
+    <TextField fx:id="tf4" layoutX="110.0" layoutY="302.0" prefWidth="89.0" />
+    <Button fx:id="btn3" layoutX="209.0" layoutY="303.0" mnemonicParsing="false" onAction="#actionButtonPressed" text="ok" />
+    <ImageView fitHeight="87.2344970703125" fitWidth="169.06876522852608" layoutX="31.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../3.PNG" />
+      </image>
+    </ImageView>
+    <Label id="lb1" fx:id="lb3" font="$x2" layoutX="202.0" layoutY="354.0" prefHeight="52.0" prefWidth="131.0" text="=" />
+    <ImageView fitHeight="25.931024685012023" fitWidth="31.999988555908203" layoutX="73.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../7.PNG" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>

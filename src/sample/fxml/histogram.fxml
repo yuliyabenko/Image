@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="ancPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="505.0" minWidth="540.0" prefHeight="505.0" prefWidth="539.000022070315" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.controllers.HistogramController">
+  <children>
+    <MenuBar prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#close" text="Close" fx:id="exitItem" />
+            <MenuItem mnemonicParsing="false" text="Save" fx:id="saveItem" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <LineChart fx:id="lineChart" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="85.0">
+      <xAxis>
+        <CategoryAxis side="BOTTOM" />
+      </xAxis>
+      <yAxis>
+        <NumberAxis side="LEFT" />
+      </yAxis>
+    </LineChart>
+    <Label fx:id="lb" layoutY="58.0" prefWidth="104.5" text="Type the limit:" AnchorPane.leftAnchor="36.5" AnchorPane.rightAnchor="399.0" />
+    <TextField fx:id="txtLimit" layoutX="141.0" layoutY="55.0" prefWidth="67.0" />
+    <Button fx:id="btnOk" layoutX="220.0" layoutY="55.0" mnemonicParsing="false" onAction="#actionButtonPressed" prefHeight="30.0" text="Ok" />
+    <Button fx:id="btnSaveCsv" layoutX="296.0" layoutY="55.0" mnemonicParsing="false" onAction="#actionButtonPressed" prefHeight="30.0" text="Save extremes" />
+    <Button fx:id="btnCalculate" layoutX="433.0" layoutY="55.0" mnemonicParsing="false" onAction="#actionButtonPressed" prefHeight="30.0" text="Calculate" />
+  </children>
+</AnchorPane>
